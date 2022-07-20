@@ -2,5 +2,5 @@
 
 This project was created to practice Git and complete the development of a simple loan calculator.
 
-
+Adding this line to check differences.
 
