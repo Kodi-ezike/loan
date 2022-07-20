@@ -4,3 +4,4 @@ This project was created to practice Git and complete the development of a simpl
 
 Adding this line to check differences.
 
+Removing this line to check differences.
