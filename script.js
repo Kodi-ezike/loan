@@ -1,3 +1,6 @@
+function input(){
+    alert("Please input amount without comma or space")
+}
 function calc(){
     const amount = document.getElementById('amount').value;
     const time = document.getElementById('range').value;
@@ -9,6 +12,7 @@ function calc(){
         result = amount; 
     }
     else{
+        
         result = (amount*(1 + 0.05*time))/time;
         if(result.toString().length >= 9){ 
             result = Math.round (result)
@@ -25,5 +29,5 @@ function calc(){
     }
     
 }
-alert("Please input amount without comma or space")
+
 //use switch case for the rate if it is not constant
