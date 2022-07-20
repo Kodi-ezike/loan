@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.jpg" type="image/jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <title>Loan calculator</title>
 </head>
 <body>
@@ -14,14 +17,14 @@
 
     <label>
         How much do you want to borrow?
-        <input type="text" id="amount">
+        <input type="text" id="amount" class="amount">
     </label>
     <div class="time-range">
         <p>For how long?</p>
         <output  id="num"></output>
     </div>
     
-    <input type="range" min="0" max="12" value="0" id="range" onchange="calc()" > 
+    <input type="range" min="0" max="12" value="0" id="range" onchange="calc()" class="input"> 
     <div class="time"> 
         <p>0</p>
         <p>12</p>
@@ -29,20 +32,20 @@
 
     <label >
         Purpose of the loan?
-        <select name="" id="purpose">
-            <option value=""></option>
-            <option value="">Rent</option>
-            <option value="">Feeding</option>
-            <option value="">School fees</option>
-            <option value="">Business</option>
-            <option value="">Entertainment</option>
-            <option value="">Health care</option>
+        <select name="" id="purpose" class="options">
+            <option value="0">--Select--</option>
+            <option value="1">Rent</option>
+            <option value="2">Feeding</option>
+            <option value="3">School fees</option>
+            <option value="4">Business</option>
+            <option value="5">Entertainment</option>
+            <option value="6">Health care</option>
         </select>
     </label>
      
     <div class="repay">
         <p>Your monthly repayment</p>
-        <p id="result">$XXX,XXX</p>
+        <p id="result">$ 0</p>
     </div>
 
     </div>

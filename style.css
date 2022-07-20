@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 .logo{
     margin: 4rem 0 0 6rem;
@@ -10,15 +11,27 @@
 .wrapper{
     width: 400px;
     padding: 2rem;
-    margin: 4rem auto;
+    margin: 2rem auto;
     border: 1px solid rgba(165, 101, 42, 0.918);
-    
+    background: hsl(12, 88%, 59%);
+    color: hsl(228, 58%, 10%);
 }
+
 #purpose, #amount{
     margin-top: 5px;
+    background: white;
+    outline: none;
+    border: none;
+    margin-bottom: 30px;
+    
+}
+#purpose{
+    height: 40px;
+    font-size: 14px;
+    padding: 0 10px;
 }
 #amount{
-    padding: 0.5rem;
+    padding: 0.5rem 15px;
 }
 .time-range{
     display: flex;
@@ -33,4 +46,45 @@
 }
 .repay{
     text-align: center;
+}
+input[type='range']{
+    -webkit-appearance: none;
+    height: 20px;
+    padding: 3px;
+    border-radius: 10px;
+    background: white;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height:14px;
+    width:14px;
+    border-radius: 50%;
+    background: hsl(228, 58%, 10%);
+}
+
+
+@media screen and (max-width: 600px) {
+    .logo{
+        margin: 4rem 0 0 2rem;
+    }
+    .wrapper{
+        width: 350px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .logo{
+        margin: 4rem 0 0 1rem;
+    }
+    .wrapper{
+        width: 320px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .logo{
+        margin: 4rem 0 0 1rem;
+    }
+    .wrapper{
+        width: 280px;
+        padding: 2rem 1rem;
+    }
 }
