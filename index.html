@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loan calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+
+    <label>
+        How much do you want to borrow?
+        <input type="text" id="amount">
+    </label>
+    <div class="time-range">
+        <p>For how long?</p>
+        <output  id="num"></output>
+    </div>
+    
+    <input type="range" min="0" max="12" value="0" id="range" onchange="calc()" > 
+    <div class="time"> 
+        <p>0</p>
+        <p>12</p>
+    </div>
+
+    <label >
+        Purpose of the loan?
+        <select name="" id="purpose">
+            <option value=""></option>
+            <option value="">Rent</option>
+            <option value="">Feeding</option>
+            <option value="">School fees</option>
+            <option value="">Business</option>
+        </select>
+    </label>
+     
+    <div class="repay">
+        <p>Your monthly repayment</p>
+        <p id="result">$XXX,XXX</p>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

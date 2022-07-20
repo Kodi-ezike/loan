@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.wrapper{
+    width: 400px;
+    padding: 2rem;
+    margin: 4rem auto;
+    border: 1px solid rgba(165, 101, 42, 0.918);
+    
+}
+#purpose, #amount{
+    margin-top: 5px;
+}
+#amount{
+    padding: 0.5rem;
+}
+.time-range{
+    display: flex;
+    justify-content: space-between;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+}
+#range, #purpose, #amount{
+    width: 100%;
+}
+.repay{
+    text-align: center;
+}
